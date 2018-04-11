@@ -1,7 +1,7 @@
 'use strict'
 var React = require('react')
 
-module.exports = r
+module.exports = o
 
 function r () {
   var argumentsArray = Array.from(arguments)
