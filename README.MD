@@ -1,6 +1,12 @@
 # react-omit
+**tl;dr:** This package lets you omit the second argument (props) when using `React.createElement()` instead of JSX.
 
-This package lets you omit the second argument (props) when using `React.createElement()` instead of JSX.
+JSX (and XML in general) looks messy due closing tags and the attributes all being on one line. You can use React without JSX but `React.createElement()` hasn't been made very user-friendly.
+
+After trying `hyperscript`, `r-dom`, and even trying to implement `pug`, I concluded that a shorthand for `React.createElement` is indeed the simplest, but that when no attributes are passed you're forced to put an empty object as the second argument. This little function removes that need.
+
+As a bonus, combined with the new Coffeescript 2, you can omit the closing tags altogether.
+The result is the same syntax for all JS and JSX in a file, with easy to type code and clearer oversight.
 
 It allows code like this:
 ```es6
