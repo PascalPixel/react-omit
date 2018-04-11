@@ -1,0 +1,30 @@
+{
+  "name": "react-omit",
+  "version": "1.0.0",
+  "description": "Omit the second argument when using React.createElement()",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Superpencil/react-omit.git"
+  },
+  "keywords": [
+    "react",
+    "dom",
+    "createElement",
+    "jsx",
+    "r-dom",
+    "hyperscript"
+  ],
+  "author": "Superpencil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Superpencil/react-omit/issues"
+  },
+  "homepage": "https://github.com/Superpencil/react-omit#readme",
+  "dependencies": {
+    "react": "^16.3.1"
+  }
+}
