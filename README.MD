@@ -73,4 +73,40 @@ export default Home
 
 ```
 
+Even better, since Coffeescript allows for objects to look like YML, you can do this:
+```coffee
+import React from 'react'
+
+Loading = () ->
+  r div,
+    r 'svg',
+      width: 38
+      height: 38
+      viewBox: '0 0 38 38'
+      xmlns: 'http://www.w3.org/2000/svg'
+      stroke: '#00AA11'
+      r 'g',
+        fill: 'none'
+        fillRule: 'evenodd'
+        r 'g',
+          transform: 'translate(1 1)'
+          strokeWidth: 2
+          r 'circle',
+            strokeOpacity: '.5'
+            cx: 18
+            cy: 18
+            r: 18
+          r 'path',
+            d: 'M36 18c0-9.94-8.06-18-18-18'
+            r 'animateTransform',
+              attributeName: 'transform'
+              type: 'rotate'
+              from: '0 18 18'
+              to: '360 18 18'
+              dur: '1s'
+              repeatCount: 'indefinite'
+
+export default Loading
+```
+
 This code is super naive and would love your feedback and PR's 🤠
