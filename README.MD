@@ -3,8 +3,9 @@
 This package lets you omit the second argument (props) when using `React.createElement()` instead of JSX.
 
 It allows code like this:
-```
+```es6
 import React from 'react'
+import r from 'react-omit'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 const Home = () =>
@@ -43,6 +44,7 @@ export default Home
 Or, using Coffeescript 2, allows you to write without closing tags, which looks very much like HAML or jade / pug:
 ```coffee
 import React from 'react'
+import r from 'react-omit'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 const Home = () ->
